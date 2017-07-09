@@ -18,8 +18,6 @@ plugins {
 	id 'groovy'
 	id 'codenarc'
 	id 'maven'
-	id 'net.saliman.cobertura' version '2.4.0'
-	id 'com.github.kt3k.coveralls' version '2.8.1'
 }
 apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.4.1/gradle-support.gradle'
 apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/master/maven-support.gradle'
@@ -44,15 +42,8 @@ dependencies {
 		'org.thymeleaf:thymeleaf:3.0.0.RELEASE',
 		'org.thymeleaf:thymeleaf-spring4:3.0.0.RELEASE'
 	)
-	testCompile(
-		'junit:junit:4.12'
-	)
 }
 
 groovydoc {
 	link('http://www.thymeleaf.org/apidocs/thymeleaf/3.0.0.RELEASE/', 'org.thymeleaf.')
-}
-
-cobertura {
-	coverageFormats = ['html', 'xml']
 }
