@@ -35,7 +35,7 @@ dialect as a bean reference:
 ```java
 @Bean
 public EnvironmentDialect environmentDialect() {
-	return new EnvironmentDialect();
+  return new EnvironmentDialect();
 }
 ```
 
