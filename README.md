@@ -22,7 +22,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-spring-environment-dialect`
- - Version: 0.1.0-SNAPSHOT
+ - Version: `0.1.0-SNAPSHOT`
 
 
 Usage
