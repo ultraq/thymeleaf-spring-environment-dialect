@@ -1,0 +1,9 @@
+language: groovy
+jdk:
+  - oraclejdk8
+
+# No need to run tasks for dependencies
+install:
+  - true
+
+after_success: ./gradlew cobertura coveralls
