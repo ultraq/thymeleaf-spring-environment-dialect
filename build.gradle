@@ -44,6 +44,11 @@ dependencies {
 	)
 }
 
+codenarc {
+	def sharedConfig = 'https://raw.githubusercontent.com/ultraq/codenarc-config-ultraq/master/codenarc.groovy'.toURL().text
+	config = resources.text.fromString(sharedConfig)
+}
+
 groovydoc {
 	link('http://www.thymeleaf.org/apidocs/thymeleaf/3.0.0.RELEASE/', 'org.thymeleaf.')
 }
