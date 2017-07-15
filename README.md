@@ -9,8 +9,6 @@ Thymeleaf + Spring Environment Dialect
 
 Render a portion of a Thymeleaf template based on the current Spring environment.
 
-**STILL UNDER DEVELOPMENT**
-
 
 Installation
 ------------
@@ -22,7 +20,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-spring-environment-dialect`
- - Version: `0.1.0-SNAPSHOT`
+ - Version: (as per the badges above)
 
 
 Usage
