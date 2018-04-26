@@ -27,13 +27,13 @@ Usage
 -----
 
 In one of your Spring `@Configuration` classes (probably the same one you're
-doing all your Thymeleaf config in), add the `nz.net.ultraq.thymeleaf.EnvironmentDialect`
+doing all your Thymeleaf config in), add the `nz.net.ultraq.thymeleaf.SpringEnvironmentDialect`
 dialect as a bean reference:
 
 ```java
 @Bean
-public EnvironmentDialect environmentDialect() {
-  return new EnvironmentDialect();
+public SpringEnvironmentDialect environmentDialect() {
+  return new SpringEnvironmentDialect();
 }
 ```
 

@@ -30,16 +30,16 @@ import org.thymeleaf.templatemode.TemplateMode
  * 
  * @author Emanuel Rabina
  */
-class EnvironmentDialect extends AbstractProcessorDialect {
+class SpringEnvironmentDialect extends AbstractProcessorDialect {
 
-	static final String NAMESPACE = 'http://www.ultraq.net.nz/thymeleaf/environment'
+	static final String NAMESPACE = 'http://www.ultraq.net.nz/thymeleaf/spring-environment'
 	static final String NAME = 'Environment'
 	static final String PREFIX = 'env'
 
 	/**
 	 * Constructor, initialize this dialect with the "Environment" name.
 	 */
-	EnvironmentDialect() {
+	SpringEnvironmentDialect() {
 
 		super(NAME, PREFIX, StandardDialect.PROCESSOR_PRECEDENCE)
 	}
