@@ -32,7 +32,7 @@ dialect as a bean reference:
 
 ```java
 @Bean
-public SpringEnvironmentDialect environmentDialect() {
+public SpringEnvironmentDialect springEnvironmentDialect() {
   return new SpringEnvironmentDialect();
 }
 ```
