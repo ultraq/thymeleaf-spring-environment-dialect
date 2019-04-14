@@ -23,30 +23,25 @@ apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.1.0/gradl
 apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.1.0/maven-support.gradle'
 apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.1.0/bundle.gradle'
 
-//name = 'Thymeleaf + Spring Environment Dialect'
+//name = 'thymeleaf-spring-environment-dialect'
 description = 'Render a portion of a Thymeleaf template based on the current Spring environment'
 archivesBaseName = 'thymeleaf-spring-environment-dialect'
 sourceCompatibility = '1.8'
 
 group    = 'nz.net.ultraq.thymeleaf'
 artifact = 'thymeleaf-spring-environment-dialect'
-version  = '0.2.0'
+version  = '0.3.0-SNAPSHOT'
 year     = '2017'
 
 dependencies {
 	compile(
-		'org.codehaus.groovy:groovy:2.4.12',
-		'org.springframework:spring-beans:4.3.0.RELEASE',
-		'org.springframework:spring-context:4.3.0.RELEASE',
-		'org.springframework:spring-expression:4.3.0.RELEASE',
-		'org.thymeleaf:thymeleaf:3.0.0.RELEASE',
-		'org.thymeleaf:thymeleaf-spring4:3.0.0.RELEASE'
+		'org.codehaus.groovy:groovy:2.5.6',
+		'org.springframework:spring-beans:5.1.6.RELEASE',
+		'org.springframework:spring-context:5.1.6.RELEASE',
+		'org.springframework:spring-expression:5.1.6.RELEASE',
+		'org.thymeleaf:thymeleaf:3.0.11.RELEASE',
+		'org.thymeleaf:thymeleaf-spring5:3.0.11.RELEASE'
 	)
-}
-
-codenarc {
-	def sharedConfig = 'https://raw.githubusercontent.com/ultraq/codenarc-config-ultraq/master/codenarc.groovy'.toURL().text
-	config = resources.text.fromString(sharedConfig)
 }
 
 groovydoc {

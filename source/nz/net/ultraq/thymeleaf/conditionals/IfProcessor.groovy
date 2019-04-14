@@ -23,7 +23,7 @@ import org.thymeleaf.processor.element.AbstractAttributeTagProcessor
 import org.thymeleaf.processor.element.IElementTagStructureHandler
 import org.thymeleaf.standard.processor.StandardIfTagProcessor
 import org.thymeleaf.templatemode.TemplateMode
-import static org.thymeleaf.spring4.expression.ThymeleafEvaluationContext.THYMELEAF_EVALUATION_CONTEXT_CONTEXT_VARIABLE_NAME
+import static org.thymeleaf.spring5.expression.ThymeleafEvaluationContext.THYMELEAF_EVALUATION_CONTEXT_CONTEXT_VARIABLE_NAME
 
 /**
  * Processor for the {@code env:if} attribute, renders any child markup if the

@@ -13,9 +13,10 @@ Render a portion of a Thymeleaf template based on the current Spring environment
 Installation
 ------------
 
-Minimum of Java 8, Thymeleaf 3.0, and Spring 4 required.
+Minimum of Java 8, Thymeleaf 3.0, and Spring 5 required.
 
 ### For Maven and Maven-compatible dependency managers
+
 Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
