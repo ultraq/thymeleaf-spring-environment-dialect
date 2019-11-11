@@ -51,12 +51,16 @@ Or, if using Spring XML configuration:
 </bean>
 ```
 
-Then, in your Thymeleaf templates, you can choose whether or not to render a
-section of markup using the `env:if`/`data-env-if` attribute.  The value you
-give it should be the name of the environment you want the markup rendered for:
+Then, in your Thymeleaf templates, you can choose whether or not to render
+sections of markup using the `env:if`/`data-env-if` and `env:unless`/`data-env-unless`
+attributes:
 
 ```html
 <div env:if="development">
-  <p>You're currently in the development environment!</p>
+  <p>You're currently in the development environment</p>
+</div>
+
+<div env:unless="development">
+  <p>This is not the development environment</p>
 </div>
 ```

@@ -17,6 +17,7 @@
 package nz.net.ultraq.thymeleaf.spring.environment
 
 import nz.net.ultraq.thymeleaf.spring.environment.processors.IfProcessor
+import nz.net.ultraq.thymeleaf.spring.environment.processors.UnlessProcessor
 
 import org.thymeleaf.dialect.AbstractProcessorDialect
 import org.thymeleaf.processor.IProcessor
@@ -55,7 +56,8 @@ class SpringEnvironmentDialect extends AbstractProcessorDialect {
 
 		return [
 			new StandardXmlNsTagProcessor(TemplateMode.HTML, dialectPrefix),
-			new IfProcessor(dialectPrefix)
+			new IfProcessor(dialectPrefix),
+			new UnlessProcessor(dialectPrefix)
 		]
 	}
 }

@@ -25,5 +25,6 @@
 	class="nz.net.ultraq.thymeleaf.spring.environment.SpringEnvironmentDialect">
 
 	<attribute-processor name="text" class="nz.net.ultraq.thymeleaf.spring.environment.processors.IfProcessor"/>
+	<attribute-processor name="text" class="nz.net.ultraq.thymeleaf.spring.environment.processors.UnlessProcessor"/>
 
 </dialect>
