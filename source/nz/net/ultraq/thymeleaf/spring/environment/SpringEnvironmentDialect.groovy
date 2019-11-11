@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package nz.net.ultraq.thymeleaf
+package nz.net.ultraq.thymeleaf.spring.environment
 
-import nz.net.ultraq.thymeleaf.conditionals.IfProcessor
+import nz.net.ultraq.thymeleaf.spring.environment.processors.IfProcessor
 
 import org.thymeleaf.dialect.AbstractProcessorDialect
 import org.thymeleaf.processor.IProcessor

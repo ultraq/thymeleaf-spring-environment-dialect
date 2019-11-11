@@ -22,8 +22,8 @@
 	                    http://www.thymeleaf.org/xsd/thymeleaf-extras-dialect-2.1.xsd"
 	prefix="env"
 	namespace-uri="http://www.ultraq.net.nz/thymeleaf/spring-environment"
-	class="nz.net.ultraq.thymeleaf.SpringEnvironmentDialect">
+	class="nz.net.ultraq.thymeleaf.spring.environment.SpringEnvironmentDialect">
 
-	<attribute-processor name="text" class="nz.net.ultraq.thymeleaf.conditionals.IfProcessor"/>
+	<attribute-processor name="text" class="nz.net.ultraq.thymeleaf.spring.environment.processors.IfProcessor"/>
 
 </dialect>

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package nz.net.ultraq.thymeleaf.conditionals
+package nz.net.ultraq.thymeleaf.spring.environment.processors
 
 import org.thymeleaf.context.ITemplateContext
 import org.thymeleaf.engine.AttributeName
