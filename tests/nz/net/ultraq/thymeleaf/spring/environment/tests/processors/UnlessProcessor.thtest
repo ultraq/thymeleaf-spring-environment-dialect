@@ -1,0 +1,14 @@
+# Test that a section of markup is excluded 
+
+%TEMPLATE_MODE HTML
+
+%INPUT
+<body>
+  <div env:unless="development">
+    <p>You're not in the development environment</p>
+  </div>
+</body>
+
+%OUTPUT
+<body>
+</body>

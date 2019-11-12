@@ -1,0 +1,17 @@
+# Test that a section of markup is rendered 
+
+%TEMPLATE_MODE HTML
+
+%INPUT
+<body>
+  <div env:if="development">
+    <p>You're currently in the development environment</p>
+  </div>
+</body>
+
+%OUTPUT
+<body>
+  <div>
+    <p>You're currently in the development environment</p>
+  </div>
+</body>
