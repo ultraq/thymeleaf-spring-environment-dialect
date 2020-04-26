@@ -3,6 +3,7 @@ Thymeleaf + Spring Environment Dialect
 ======================================
 
 [![Build Status](https://travis-ci.org/ultraq/thymeleaf-spring-environment-dialect.svg)](https://travis-ci.org/ultraq/thymeleaf-spring-environment-dialect)
+[![Coverage Status](https://coveralls.io/repos/github/ultraq/thymeleaf-spring-environment-dialect/badge.svg?branch=master)](https://coveralls.io/github/ultraq/thymeleaf-spring-environment-dialect?branch=master)
 [![Maven Central](https://img.shields.io/maven-central/v/nz.net.ultraq.thymeleaf/thymeleaf-spring-environment-dialect.svg?maxAge=3600)](http://search.maven.org/#search|ga|1|g%3A%22nz.net.ultraq.thymeleaf%22%20AND%20a%3A%22thymeleaf-spring-environment-dialect%22)
 
 Render a portion of a Thymeleaf template based on the current Spring environment.
