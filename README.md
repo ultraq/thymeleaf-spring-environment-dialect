@@ -25,28 +25,13 @@ Add a dependency to your project with the following co-ordinates:
 Usage
 -----
 
-Add the Spring Environment Dialect to your existing Thymeleaf template engine,
-eg:
-
-If using Java configuration classes:
+Add the Spring Environment Dialect to your existing Thymeleaf template engine:
 
 ```java
 @Bean
 public SpringEnvironmentDialect springEnvironmentDialect() {
   return new SpringEnvironmentDialect();
 }
-```
-
-Or, if using Spring XML configuration:
-
-```xml
-<bean id="templateEngine" class="org.thymeleaf.spring5.SpringTemplateEngine">
-  <property name="additionalDialects">
-    <set>
-      <bean class="nz.net.ultraq.thymeleaf.spring.environment.SpringEnvironmentDialect"/>
-    </set>
-  </property>
-</bean>
 ```
 
 Then, in your Thymeleaf templates, you can choose whether or not to render
