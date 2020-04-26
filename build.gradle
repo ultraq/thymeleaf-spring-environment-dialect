@@ -45,6 +45,11 @@ dependencies {
 		'org.springframework:spring-webmvc:5.1.6.RELEASE',
 		'org.thymeleaf:thymeleaf-testing:3.0.4.RELEASE'
 	)
+	// Needed for Codenarc to work on Java 14 for now, see: https://github.com/gradle/gradle/issues/12646
+	constraints {
+		codenarc('org.codehaus.groovy:groovy:3.0.3')
+		codenarc('org.codehaus.groovy:groovy-xml:3.0.3')
+	}
 }
 
 groovydoc {
