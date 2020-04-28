@@ -19,7 +19,11 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-spring-environment-dialect`
- - Version: (as per the badges above)
+ - Version: `3.0.0-SNAPSHOT`
+
+Check the [project releases](https://github.com/ultraq/thymeleaf-spring-environment-dialect/releases)
+for a list of available versions.  Each release page also includes a
+downloadable JAR if you want to manually add it to your project classpath.
 
 
 Usage
