@@ -21,8 +21,8 @@ plugins {
 	id 'jacoco'
 	id 'com.github.kt3k.coveralls' version '2.10.1'
 }
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.3.0/gradle-support.gradle'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.3.0/maven-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.3.1/gradle-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.3.1/maven-support.gradle'
 
 description = 'Render a portion of a Thymeleaf template based on the current Spring environment'
 archivesBaseName = 'thymeleaf-spring-environment-dialect'
@@ -30,7 +30,7 @@ sourceCompatibility = '1.8'
 
 group    = 'nz.net.ultraq.thymeleaf'
 artifact = 'thymeleaf-spring-environment-dialect'
-version  = '1.0.0-SNAPSHOT'
+version  = '1.0.0'
 year     = '2017'
 
 dependencies {
@@ -41,7 +41,7 @@ dependencies {
 		'org.thymeleaf:thymeleaf-spring5:3.0.11.RELEASE'
 	)
 	testImplementation(
-		'nz.net.ultraq.thymeleaf:thymeleaf-testing-junit:3.0.0-SNAPSHOT',
+		'nz.net.ultraq.thymeleaf:thymeleaf-testing-junit:3.0.0',
 		'org.springframework:spring-webmvc:5.1.6.RELEASE',
 		'org.thymeleaf:thymeleaf-testing:3.0.4.RELEASE'
 	)
