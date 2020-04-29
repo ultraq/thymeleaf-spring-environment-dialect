@@ -20,9 +20,10 @@ plugins {
 	id 'maven'
 	id 'jacoco'
 	id 'com.github.kt3k.coveralls' version '2.10.1'
+	id 'distribution'
 }
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.3.1/gradle-support.gradle'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/2.3.1/maven-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/3.0.0/gradle-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/3.0.0/maven-support.gradle'
 
 description = 'Render a portion of a Thymeleaf template based on the current Spring environment'
 archivesBaseName = 'thymeleaf-spring-environment-dialect'
