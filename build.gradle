@@ -15,6 +15,7 @@
  */
 
 plugins {
+	id 'java-library'
 	id 'groovy'
 	id 'codenarc'
 	id 'maven'
@@ -31,12 +32,14 @@ sourceCompatibility = '1.8'
 
 group    = 'nz.net.ultraq.thymeleaf'
 artifact = 'thymeleaf-spring-environment-dialect'
-version  = '1.0.0'
+version  = '1.0.1-SNAPSHOT'
 year     = '2017'
 
 dependencies {
+	api(
+		'org.codehaus.groovy:groovy:3.0.3'
+	)
 	implementation(
-		'org.codehaus.groovy:groovy:3.0.3',
 		'org.springframework:spring-context:5.1.6.RELEASE',
 		'org.thymeleaf:thymeleaf:3.0.11.RELEASE',
 		'org.thymeleaf:thymeleaf-spring5:3.0.11.RELEASE'
