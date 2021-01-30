@@ -63,7 +63,7 @@ class IfProcessor extends AbstractAttributeTagProcessor {
 		def environment = thymeleafEvaluationContext.beanResolver.resolve(thymeleafEvaluationContext, 'environment')
 		def intendedEnvironment = attributeValue
 
-		if (!environment.activeProfiles.contains(intendedEnvironment)) {
+		if (!environment.is(intendedEnvironment)) {
 			structureHandler.removeElement()
 		}
 	}
