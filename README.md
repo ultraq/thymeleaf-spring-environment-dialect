@@ -2,7 +2,7 @@
 Thymeleaf + Spring Environment Dialect
 ======================================
 
-[![Build Status](https://travis-ci.com/ultraq/thymeleaf-spring-environment-dialect.svg)](https://travis-ci.com/ultraq/thymeleaf-spring-environment-dialect)
+[![Build Status](https://github.com/ultraq/thymeleaf-spring-environment-dialect/actions/workflows/build.yml/badge.svg)](https://github.com/ultraq/thymeleaf-spring-environment-dialect/actions)
 [![Coverage Status](https://coveralls.io/repos/github/ultraq/thymeleaf-spring-environment-dialect/badge.svg?branch=master)](https://coveralls.io/github/ultraq/thymeleaf-spring-environment-dialect?branch=master)
 [![Maven Central](https://img.shields.io/maven-central/v/nz.net.ultraq.thymeleaf/thymeleaf-spring-environment-dialect.svg?maxAge=3600)](http://search.maven.org/#search|ga|1|g%3A%22nz.net.ultraq.thymeleaf%22%20AND%20a%3A%22thymeleaf-spring-environment-dialect%22)
 
