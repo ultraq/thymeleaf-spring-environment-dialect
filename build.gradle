@@ -37,7 +37,7 @@ year     = '2017'
 
 dependencies {
 	api(
-		'org.codehaus.groovy:groovy:3.0.3'
+		'org.codehaus.groovy:groovy:3.0.8'
 	)
 	implementation(
 		'org.springframework:spring-context:5.1.6.RELEASE',
@@ -46,9 +46,12 @@ dependencies {
 		'org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE'
 	)
 	testImplementation(
-		'nz.net.ultraq.thymeleaf:thymeleaf-testing-junit:3.0.1',
+		'nz.net.ultraq.thymeleaf:thymeleaf-testing-junit:4.0.0-SNAPSHOT',
 		'org.springframework:spring-webmvc:5.1.6.RELEASE',
 		'org.thymeleaf:thymeleaf-testing:3.0.4.RELEASE'
+	)
+	testRuntime(
+		'org.slf4j:slf4j-simple:1.7.31'
 	)
 }
 
@@ -56,6 +59,10 @@ processResources {
 	expand([
 		version: version
 	])
+}
+
+test {
+	useJUnitPlatform()
 }
 
 groovydoc {
