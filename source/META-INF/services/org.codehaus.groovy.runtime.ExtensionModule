@@ -15,5 +15,5 @@
 # 
 
 moduleName = thymeleaf-spring-environment-dialect
-moduleVersion = ${version}
+moduleVersion = ${moduleVersion}
 extensionClasses = nz.net.ultraq.thymeleaf.spring.environment.extensions.StandardServletEnvironmentExtensions

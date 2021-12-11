@@ -23,42 +23,33 @@ plugins {
 	id 'distribution'
 	id 'maven-publish'
 }
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/3.4.0/gradle-support.gradle'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/3.4.0/maven-publish-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/4.0.0/gradle-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/4.0.0/maven-publish-support.gradle'
 
 description = 'Render a portion of a Thymeleaf template based on the current Spring environment'
-archivesBaseName = 'thymeleaf-spring-environment-dialect'
-sourceCompatibility = '1.8'
-
-group    = 'nz.net.ultraq.thymeleaf'
-artifact = 'thymeleaf-spring-environment-dialect'
 version  = '1.1.0-SNAPSHOT'
-year     = '2017'
+sourceCompatibility = '1.8'
+group = 'nz.net.ultraq.thymeleaf'
+year = '2017'
 
 dependencies {
 	api(
-		'org.codehaus.groovy:groovy:3.0.8'
+		'org.codehaus.groovy:groovy:3.0.9'
 	)
 	implementation(
-		'org.springframework:spring-context:5.1.6.RELEASE',
-		'org.springframework:spring-web:5.1.6.RELEASE',
-		'org.thymeleaf:thymeleaf:3.0.12.RELEASE',
-		'org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE'
+		'org.springframework:spring-context:5.3.13',
+		'org.springframework:spring-web:5.3.13',
+		'org.thymeleaf:thymeleaf:3.0.14.RELEASE',
+		'org.thymeleaf:thymeleaf-spring5:3.0.14.RELEASE'
 	)
 	testImplementation(
-		'nz.net.ultraq.thymeleaf:thymeleaf-testing-junit:4.0.0-SNAPSHOT',
-		'org.springframework:spring-webmvc:5.1.6.RELEASE',
+		'nz.net.ultraq.thymeleaf:thymeleaf-testing-junit:4.0.0',
+		'org.springframework:spring-webmvc:5.3.13',
 		'org.thymeleaf:thymeleaf-testing:3.0.4.RELEASE'
 	)
-	testRuntime(
-		'org.slf4j:slf4j-simple:1.7.31'
+	testRuntimeOnly(
+		'org.slf4j:slf4j-simple:1.7.32'
 	)
-}
-
-processResources {
-	expand([
-		version: version
-	])
 }
 
 test {
@@ -66,5 +57,5 @@ test {
 }
 
 groovydoc {
-	link('http://www.thymeleaf.org/apidocs/thymeleaf/3.0.12.RELEASE/', 'org.thymeleaf.')
+	link('http://www.thymeleaf.org/apidocs/thymeleaf/3.0.14.RELEASE/', 'org.thymeleaf.')
 }
