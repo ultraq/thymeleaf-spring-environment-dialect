@@ -63,7 +63,7 @@ class UnlessProcessor extends AbstractAttributeTagProcessor {
 		def environment = thymeleafEvaluationContext.beanResolver.resolve(thymeleafEvaluationContext, 'environment')
 		def intendedEnvironment = attributeValue
 
-		if (environment.is(intendedEnvironment)) {
+		if (environment.activeProfiles.contains(intendedEnvironment)) {
 			structureHandler.removeElement()
 		}
 	}
