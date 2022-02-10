@@ -3,7 +3,7 @@ Thymeleaf + Spring Environment Dialect
 ======================================
 
 [![Build Status](https://github.com/ultraq/thymeleaf-spring-environment-dialect/actions/workflows/build.yml/badge.svg)](https://github.com/ultraq/thymeleaf-spring-environment-dialect/actions)
-[![Coverage Status](https://coveralls.io/repos/github/ultraq/thymeleaf-spring-environment-dialect/badge.svg?branch=master)](https://coveralls.io/github/ultraq/thymeleaf-spring-environment-dialect?branch=master)
+[![codecov](https://codecov.io/gh/ultraq/thymeleaf-spring-environment-dialect/branch/main/graph/badge.svg?token=cUY2X9Ssuy)](https://codecov.io/gh/ultraq/thymeleaf-spring-environment-dialect)
 [![Maven Central](https://img.shields.io/maven-central/v/nz.net.ultraq.thymeleaf/thymeleaf-spring-environment-dialect.svg?maxAge=3600)](http://search.maven.org/#search|ga|1|g%3A%22nz.net.ultraq.thymeleaf%22%20AND%20a%3A%22thymeleaf-spring-environment-dialect%22)
 
 Render a portion of a Thymeleaf template based on the current Spring environment.
