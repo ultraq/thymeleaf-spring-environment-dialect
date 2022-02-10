@@ -17,7 +17,7 @@
 package nz.net.ultraq.thymeleaf.spring.environment.tests
 
 import nz.net.ultraq.thymeleaf.spring.environment.SpringEnvironmentDialect
-import nz.net.ultraq.thymeleaf.testing.JUnitTestExecutorAll
+import nz.net.ultraq.thymeleaf.testing.junit.JUnitTestExecutorAll
 
 import org.thymeleaf.dialect.IDialect
 import org.thymeleaf.spring5.dialect.SpringStandardDialect
