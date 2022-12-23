@@ -22,7 +22,7 @@ import nz.net.ultraq.thymeleaf.testing.junit.JUnitTestExecutorAll
 import org.thymeleaf.dialect.IDialect
 import org.thymeleaf.spring5.dialect.SpringStandardDialect
 import org.thymeleaf.testing.templateengine.context.IProcessingContextBuilder
-import org.thymeleaf.testing.templateengine.context.web.SpringWebProcessingContextBuilder
+import org.thymeleaf.testing.templateengine.spring5.context.web.SpringMVCWebProcessingContextBuilder
 
 /**
  * A test executor for all of the Thymeleaf test files.
@@ -36,7 +36,7 @@ class SpringEnvironmentDialectTestExecutor extends JUnitTestExecutorAll {
 	  new SpringEnvironmentDialect()
 	]
 
-	final IProcessingContextBuilder testProcessingContextBuilder = new SpringWebProcessingContextBuilder(
+	final IProcessingContextBuilder testProcessingContextBuilder = new SpringMVCWebProcessingContextBuilder(
 		applicationContextConfigLocation: 'classpath:application-context-development.xml'
 	)
 }
